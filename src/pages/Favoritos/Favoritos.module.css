@@ -1,0 +1,8 @@
+.addFavorite {
+    text-align: center;
+}
+
+.addFavorite p {
+    font-size: 24px;
+    color: var(--noir);
+}

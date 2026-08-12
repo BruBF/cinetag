@@ -1,0 +1,68 @@
+.container {
+    padding: 0 0 1em 0;
+    margin-top: .5em;
+    width: 300px;
+    flex-shrink: 0;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerDados {
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.capa {
+    width: 300px;
+    height: 360px;
+}
+
+.favorite {
+    cursor: pointer;
+    overflow: visible;
+}
+
+.default path{
+    fill: var(--grey);
+    stroke: var(--noir);
+    stroke-width: 1.5px;
+}
+
+.favoritado path {
+    fill: var(--noir);
+}
+
+.botaoFavorito {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+.containerInformacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+    
+}
+
+.genero {
+    height: 84px;
+}
+.label {
+    font-weight: 700;
+}
+
+.containerInformacoes span:last-child {
+    line-height: 1.4;
+}

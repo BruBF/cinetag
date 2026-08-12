@@ -6,6 +6,7 @@ import Container from "components/Container";
 import Footer from "components/Footer";
 import FilmesProvider from 'contextos/Filmes';
 import FavoritosProvider from "contextos/Favoritos";
+import Trailer from "./pages/Trailer";
 
 function AppRoutes() {
     return(
@@ -17,6 +18,7 @@ function AppRoutes() {
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
                             <Route path="/Favoritos" element={<Favoritos />}></Route>
+                            <Route path="/:id" element={<Trailer />}></Route>
                         </Routes>
                     </FavoritosProvider>
                 </FilmesProvider>

@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# 🎬 Cinetag
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Catálogo interativo de filmes de Alfred Hitchcock desenvolvido com React.
 
-## Available Scripts
+O projeto teve como base um curso de React da Alura e foi posteriormente expandido com novas funcionalidades desenvolvidas para fins de aprendizado, incluindo integração com a OMDb API, gerenciamento de favoritos com Context API e enriquecimento das informações dos filmes.
 
-In the project directory, you can run:
+## 🛠️ Tecnologias Utilizadas
 
-### `npm start`
+- React
+- React Router DOM
+- Context API
+- CSS Modules
+- JavaScript
+- OMDb API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Listagem de filmes de Alfred Hitchcock
+- Sistema de favoritos utilizando Context API
+- Integração com OMDb API
+- Exibição de:
+  - Nota IMDb
+  - Gêneros
+  - Duração
+- Tradução automática dos gêneros para português
+- Componentização com React
+- Estilização com CSS Modules
 
-### `npm test`
+## 🎯 Aprendizados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Durante o desenvolvimento foram praticados conceitos como:
 
-### `npm run build`
+- Componentização
+- Props
+- Hooks (useState, useEffect e useContext)
+- Context API
+- Consumo de APIs REST
+- Gerenciamento de estado global
+- CSS Modules
+- React Router DOM
+- Organização de projetos React
+- Manipulação de dados externos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Melhorias implementadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Além da proposta original do curso, foram adicionadas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Integração com a OMDb API
+- Sistema de favoritos utilizando Context API
+- Contexto global para carregamento dos filmes
+- Tradução dos gêneros para português
+- Exibição de nota IMDb
+- Exibição de duração dos filmes
+- Estrutura preparada para utilização de diretor, elenco e ano de lançamento fornecidos pela OMDb API
+- Reorganização da estrutura do projeto
 
-### `npm run eject`
+## 🚧 Próximas melhorias
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Página de detalhes do filme
+- Exibição de diretor e elenco
+- Exibição do ano de lançamento
+- Trailer automático
+- Informações sobre onde assistir
+- Deploy da aplicação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Estrutura do Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```txt
+src
+├── components
+├── contextos
+│   ├── Favoritos.js
+│   └── Filmes.js
+├── json
+├── pages
+│   ├── Home
+│   └── Favoritos
+├── services
+│   └── omdb.js
+└── utils
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Configuração
 
-## Learn More
+Clone o repositório:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/BruBF/cinetag.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Acesse a pasta:
 
-### Code Splitting
+```bash
+cd cinetag
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Instale as dependências:
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Crie um arquivo `.env` na raiz do projeto:
 
-### Making a Progressive Web App
+```env
+REACT_APP_OMDB_API_KEY=SUA_CHAVE
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Inicie a aplicação:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A aplicação estará disponível em:
 
-### Deployment
+```txt
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 👩‍💻 Autora
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bruna Borges Freire
+
+GitHub: https://github.com/BruBF
+
+## 📚 Créditos
+
+Projeto desenvolvido a partir do curso "React: praticando React com JS" da Alura e posteriormente expandido com funcionalidades próprias para estudo, prática de desenvolvimento frontend e consumo de APIs externas.

@@ -97,7 +97,7 @@ cd cinetag
 Instale as dependências:
 
 ```bash
-npm install
+npm start
 ```
 
 Crie um arquivo `.env` na raiz do projeto:

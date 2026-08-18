@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner";
 import Title from "components/Title";
+import Container from "components/Container";
 import Card from "components/Card";
 import CardContainer from "components/CardContainer";
 import { useFilmesContext } from "contextos/Filmes";
@@ -15,21 +16,22 @@ function Home() {
     return (
         <>
             <Banner imagem="home" />
+            <Container>
+                <Title>
+                    <h1>Conheça mais sobre os filmes de Alfred Hitchcock</h1>
+                </Title>
 
-            <Title>
-                <h1>Conheça mais sobre os filmes de Alfred Hitchcock</h1>
-            </Title>
-
-            <section className={styles.container}>
-                <CardContainer>
-                    {filmes.map((filme) => (
-                        <Card
-                            {...filme}
-                            key={filme.id}
-                        />
-                    ))}
-                </CardContainer>
-            </section>
+                <section className={styles.container}>
+                    <CardContainer>
+                        {filmes.map((filme) => (
+                            <Card
+                                {...filme}
+                                key={filme.id}
+                            />
+                        ))}
+                    </CardContainer>
+                </section>
+            </Container>
         </>
     );
 }

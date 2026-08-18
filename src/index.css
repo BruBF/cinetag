@@ -1,8 +1,17 @@
 :root {
   --primary-font: 'Figtree', sans-serif;
   --snow: #FFFFFF;
+  --snow-transparent: #ffffff33;
   --noir: #000000;
   --grey: #E2E2E2;
+  --grey-oxford: #171718;
+
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
 }
 
 body {
@@ -11,6 +20,11 @@ body {
   background-color: var(--snow);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 

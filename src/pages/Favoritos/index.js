@@ -5,6 +5,7 @@ import CardContainer from 'components/CardContainer';
 import { useFavoritosContext } from 'contextos/Favoritos';
 import styles from './Favoritos.module.css';
 import { useFilmesContext } from 'contextos/Filmes';
+import Container from "components/Container";
 
 
 function Favoritos() {
@@ -21,6 +22,7 @@ function Favoritos() {
         <Title>
             <h1>Meus Favoritos</h1>
         </Title>
+        <Container >
         <CardContainer>
             {filmesFavoritos.length > 0 ? (
                 filmesFavoritos.map((filme) => (
@@ -33,6 +35,7 @@ function Favoritos() {
                 </div>
             )}
         </CardContainer>
+        </Container>
         </>
     )
 }

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import styles from './HeaderLink.module.css';
 
-function HeaderLink({ url, children}) {
+function HeaderLink({ url, children, onClick}) {
     return (
-        <Link to={url} className={styles.link}>
+        <Link to={url} className={styles.link} onClick={onClick}>
             {children}
         </Link>
     )

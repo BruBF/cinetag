@@ -4,7 +4,7 @@ import { traduzirGenero } from '../../utils/traduzirGenero';
 import { Link } from 'react-router-dom';
 
 
-function Card({id, titulo, capa, imdbID, imdbRating, genre, runtime}) {
+function Card({id, titulo, url, capa, imdbID, imdbRating, genre, runtime}) {
 
     const { favorito, adicionarFavorito } = useFavoritosContext();
 
@@ -19,7 +19,7 @@ function Card({id, titulo, capa, imdbID, imdbRating, genre, runtime}) {
         <div className={styles.container}>
 
             <Link
-                to={`/filme/${id}`}
+                to={`/filme/${url}`}
                 className={styles.linkCard}
             >
                 <img

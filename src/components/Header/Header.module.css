@@ -1,13 +1,161 @@
 .header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.1em 20em;
+    justify-content: space-between;
+    padding: 1rem;
     background-color: var(--noir);
 }
 
-@media (max-width: 768px) {
-    .header {
-        padding: 1.1em 1em;
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    cursor: pointer;
+
+    width: 100%;
+
+    background-color: var(--grey-oxford);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease,
+        visibility .3s ease;
+
+    z-index: 1000;
+}
+
+.menu a {
+    width: 100%;
+    text-align: center;
+
+    padding: 1rem 0;
+
+    border-bottom: 1px solid var(--snow-transparent);
+
+    color: var(--snow);
+    transition: opacity .2s ease;
+    text-decoration: none;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    opacity: .8;
+}
+.aberto {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    background-color: var(--grey-oxford);
+}
+
+.botaoMenu {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.animatedIcon {
+    width: 30px;
+    height: 20px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.animatedIcon span {
+    display: block;
+
+    position: absolute;
+
+    height: 3px;
+    width: 100%;
+
+    background: var(--snow);
+
+    border-radius: 9px;
+
+    left: 0;
+
+    transition: .25s ease-in-out;
+}
+
+.animatedIcon span:nth-child(1) {
+    top: 0;
+}
+
+.animatedIcon span:nth-child(2),
+.animatedIcon span:nth-child(3) {
+    top: 10px;
+}
+
+.animatedIcon span:nth-child(4) {
+    top: 20px;
+}
+
+.open span:nth-child(1) {
+    top: 11px;
+    width: 0;
+    left: 50%;
+}
+
+.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.open span:nth-child(4) {
+    top: 11px;
+    width: 0;
+    left: 50%;
+}
+
+@media (min-width: 768px) {
+
+    .botaoMenu {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: auto;
+
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        padding: 0;
+
+        box-shadow: none;
+        background-color: var(--noir);
+    }
+
+    .menu a {
+        width: auto;
+        padding: 0;
+
+        border-bottom: none;
     }
 }

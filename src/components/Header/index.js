@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import logo from './logo.png';
 import styles from './Header.module.css';
 import HeaderLink from "./HeaderLink";
 
 function Header() {
+
     const [menuAberto, setMenuAberto] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        setMenuAberto(false);
+    }, [location]);
 
     return (
         <header className={styles.header}>
@@ -33,10 +39,10 @@ function Header() {
                     menuAberto ? styles.aberto : ""
                 }`}
             >
-                <HeaderLink url="/" onClick={() => setMenuAberto(false)}>
+                <HeaderLink url="/">
                     Home
                 </HeaderLink>
-                <HeaderLink url="/favoritos" onClick={() => setMenuAberto(false)}>
+                <HeaderLink url="/favoritos">
                     Favoritos
                 </HeaderLink>
             </nav>

@@ -23,18 +23,18 @@ function Favoritos() {
             <h1>Meus Favoritos</h1>
         </Title>
         <Container >
-        <CardContainer>
-            {filmesFavoritos.length > 0 ? (
-                filmesFavoritos.map((filme) => (
-                    <Card {...filme} key={filme.id} />
-                ))
-            ) : (
-                <div className={styles.addFavorite}>
-                    <p>Nenhum filme favoritado no momento.</p>
-                    <p>Volte para a Home e clique no ❤️ para adicionar aos Favoritos</p>
-                </div>
-            )}
-        </CardContainer>
+            <CardContainer>
+                {filmesFavoritos.length > 0 ? (
+                    filmesFavoritos.map((filme) => (
+                        <Card {...filme} key={filme.id} />
+                    ))
+                ) : (
+                    <div className={styles.addFavorite}>
+                        <p>Nenhum filme favoritado no momento.</p>
+                        <p>Volte para a Home e clique no ❤️ para adicionar aos Favoritos</p>
+                    </div>
+                )}
+            </CardContainer>
         </Container>
         </>
     )

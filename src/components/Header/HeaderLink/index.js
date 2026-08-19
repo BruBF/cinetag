@@ -1,11 +1,18 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './HeaderLink.module.css';
 
-function HeaderLink({ url, children, onClick}) {
+function HeaderLink({ url, children}) {
     return (
-        <Link to={url} className={styles.link} onClick={onClick}>
+        <NavLink
+            to={url}
+            className={({ isActive }) =>
+                isActive
+                    ? `${styles.link}`
+                    : styles.link
+            }
+        >
             {children}
-        </Link>
+        </NavLink>
     )
 }
 

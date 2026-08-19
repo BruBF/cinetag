@@ -8,12 +8,6 @@
 
 }
 
-html,
-body,
-#root {
-  min-height: 100vh;
-}
-
 body {
   margin: 0;
   font-family: var(--primary-font);
@@ -22,11 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
+main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
-
-
-

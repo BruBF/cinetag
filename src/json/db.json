@@ -1,74 +1,76 @@
-[
-    {
-        "id": 1,
-        "titulo": "Disque M Para Matar",
-        "url": "disque-m-para-matar",
-        "imdbID": "tt0046912",
-        "capa": "/imagens/card_movies/1.disque-m-para-matar.jpeg",
-        "enredo": "Um ex-tenista decide matar a esposa para herdar o dinheiro dela e se vingar de um caso que ela havia tido. A fim de se livrar de culpas, usa um antigo colega de faculdade. Mas as coisas não vão correr como estava planeado.",
-        "link": "https://www.youtube.com/embed/_rLa7HIkkQc"
-    },
-    {
-        "id": 2,
-        "titulo": "Pacto Sinistro",
-        "url": "pacto-sinistro",
-        "imdbID": "tt0044079",
-        "capa": "/imagens/card_movies/2.pacto-sinistro.jpg",
-        "enredo": "Um psicopata força uma estrela do tênis a cumprir sua teoria de que dois estranhos podem escapar de um assassinato.",
-        "link": "https://www.youtube.com/embed/wQ6UhGcPeRo"
-    },
-    {
-        "id": 3,
-        "titulo": "Janela Indiscreta",
-        "url": "janela-indiscreta",
-        "imdbID": "tt0047396",
-        "capa": "/imagens/card_movies/3.janela_indiscreta.jpg",
-        "enredo": "Um fotógrafo em uma cadeira de rodas espiona seus vizinhos pela janela de seu apartamento e está convencido de que um deles cometeu um assassinato.",
-        "link": "https://www.youtube.com/embed/m01YktiEZCw"
-    },
-    {
-        "id": 4,
-        "titulo": "Intriga Internacional",
-        "url": "intriga-internacional",
-        "imdbID": "tt0053125",
-        "capa": "/imagens/card_movies/4.intriga-internacional.jpeg",
-        "enredo": "Um executivo de publicidade de Nova Iorque tem que fugir quando é confundido por um agente de governo.",
-        "link": "https://www.youtube.com/embed/Fx0QuZJVTFE"
-    },
-    {
-        "id": 5,
-        "titulo": "Psicose",
-        "url": "psicose",
-        "imdbID": "tt0054215",
-        "capa": "/imagens/card_movies/5.psicose.jpeg",
-        "enredo": "Uma secretária de Phoenix desvia dinheiro de um cliente de sua empresa, foge e vai a um motel remoto gerido por um jovem sob o domínio da mãe.",
-        "link": "https://www.youtube.com/embed/wfGjWZmyvfo"
-    },
-    {
-        "id": 6,
-        "titulo": "Festim Diabólico",
-        "url": "festim-diabolico",
-        "imdbID": "tt0040746",
-        "capa": "/imagens/card_movies/6.festim_diabolico.jpg",
-        "enredo": "A excitação de cometer o crime perfeito leva dois homens a matar e, em seguida, a organizar uma festa no local do crime convidando o pai e a noiva da vítima e ainda um professor de filosofia que os inspirou inadvertidamente.",
-        "link": "https://www.youtube.com/embed/8xkQoH8QbVs"
-    },
-    {
-        "id": 7,
-        "titulo": "Os Pássaros",
-        "url": "os-passaros",
-        "imdbID": "tt0056869",
-        "capa": "/imagens/card_movies/7.os-passaros.jpg",
-        "enredo": "Um milionário da alta sociedade de San Francisco persegue a uma possível namorada em uma pequena cidade de California.",
-        "link": "https://www.youtube.com/embed/0fJh2gIBOto"
-    },
-    {
-        "id": 8,
-        "titulo": "Um corpo que cai",
-        "url": "um-corpo-que-cai",
-        "imdbID": "tt0052357",
-        "capa": "/imagens/card_movies/8.um-corpo-que-cai.jpeg",
-        "enredo": "Um ex-policial luta contra seus demônios enquanto está obcecado por uma mulher bonita.",
-        "link": "https://www.youtube.com/embed/91ccee3DOMk"
-    }
-]
+{
+    "videos": [
+        {
+            "id": 1,
+            "titulo": "Disque M Para Matar",
+            "url": "disque-m-para-matar",
+            "imdbID": "tt0046912",
+            "capa": "/imagens/card_movies/1.disque-m-para-matar.jpeg",
+            "enredo": "Um ex-tenista decide matar a esposa para herdar o dinheiro dela e se vingar de um caso que ela havia tido. A fim de se livrar de culpas, usa um antigo colega de faculdade. Mas as coisas não vão correr como estava planeado.",
+            "link": "https://www.youtube.com/embed/_rLa7HIkkQc"
+        },
+        {
+            "id": 2,
+            "titulo": "Pacto Sinistro",
+            "url": "pacto-sinistro",
+            "imdbID": "tt0044079",
+            "capa": "/imagens/card_movies/2.pacto-sinistro.jpg",
+            "enredo": "Um psicopata força uma estrela do tênis a cumprir sua teoria de que dois estranhos podem escapar de um assassinato.",
+            "link": "https://www.youtube.com/embed/wQ6UhGcPeRo"
+        },
+        {
+            "id": 3,
+            "titulo": "Janela Indiscreta",
+            "url": "janela-indiscreta",
+            "imdbID": "tt0047396",
+            "capa": "/imagens/card_movies/3.janela_indiscreta.jpg",
+            "enredo": "Um fotógrafo em uma cadeira de rodas espiona seus vizinhos pela janela de seu apartamento e está convencido de que um deles cometeu um assassinato.",
+            "link": "https://www.youtube.com/embed/m01YktiEZCw"
+        },
+        {
+            "id": 4,
+            "titulo": "Intriga Internacional",
+            "url": "intriga-internacional",
+            "imdbID": "tt0053125",
+            "capa": "/imagens/card_movies/4.intriga-internacional.jpeg",
+            "enredo": "Um executivo de publicidade de Nova Iorque tem que fugir quando é confundido por um agente de governo.",
+            "link": "https://www.youtube.com/embed/Fx0QuZJVTFE"
+        },
+        {
+            "id": 5,
+            "titulo": "Psicose",
+            "url": "psicose",
+            "imdbID": "tt0054215",
+            "capa": "/imagens/card_movies/5.psicose.jpeg",
+            "enredo": "Uma secretária de Phoenix desvia dinheiro de um cliente de sua empresa, foge e vai a um motel remoto gerido por um jovem sob o domínio da mãe.",
+            "link": "https://www.youtube.com/embed/wfGjWZmyvfo"
+        },
+        {
+            "id": 6,
+            "titulo": "Festim Diabólico",
+            "url": "festim-diabolico",
+            "imdbID": "tt0040746",
+            "capa": "/imagens/card_movies/6.festim_diabolico.jpg",
+            "enredo": "A excitação de cometer o crime perfeito leva dois homens a matar e, em seguida, a organizar uma festa no local do crime convidando o pai e a noiva da vítima e ainda um professor de filosofia que os inspirou inadvertidamente.",
+            "link": "https://www.youtube.com/embed/8xkQoH8QbVs"
+        },
+        {
+            "id": 7,
+            "titulo": "Os Pássaros",
+            "url": "os-passaros",
+            "imdbID": "tt0056869",
+            "capa": "/imagens/card_movies/7.os-passaros.jpg",
+            "enredo": "Um milionário da alta sociedade de San Francisco persegue a uma possível namorada em uma pequena cidade de California.",
+            "link": "https://www.youtube.com/embed/0fJh2gIBOto"
+        },
+        {
+            "id": 8,
+            "titulo": "Um corpo que cai",
+            "url": "um-corpo-que-cai",
+            "imdbID": "tt0052357",
+            "capa": "/imagens/card_movies/8.um-corpo-que-cai.jpeg",
+            "enredo": "Um ex-policial luta contra seus demônios enquanto está obcecado por uma mulher bonita.",
+            "link": "https://www.youtube.com/embed/91ccee3DOMk"
+        }
+    ]
+}

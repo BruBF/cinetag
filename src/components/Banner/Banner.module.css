@@ -1,6 +1,19 @@
 .capa {
     width: 100%;
-    height: 347px;
+    height: 180px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .capa {
+        height: 280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .capa {
+        height: 400px;
+    }
+    
 }

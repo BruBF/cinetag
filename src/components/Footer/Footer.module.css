@@ -3,6 +3,9 @@
     display: flex;
     justify-content: center;
     background-color: var(--noir);
+
+    position: sticky;
+    top: 100vh;
 }
 
 .footer h2 {

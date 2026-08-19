@@ -4,6 +4,7 @@ import { useFilmesContext } from 'contextos/Filmes';
 import { useParams } from 'react-router-dom';
 import { traduzirGenero } from '../../utils/traduzirGenero';
 import Container from 'components/Container';
+import NaoEncontrada from 'pages/NaoEncontrada';
 
 function Trailer() {
     const { filmes } = useFilmesContext();
@@ -13,9 +14,12 @@ function Trailer() {
         (filme) => filme.url === parametros.id
     );
 
+    if (filmes.length === 0) {
+        return <p>Carregando...</p>;
+    }
 
     if (!filme) {
-        return <p>Carregando...</p>;
+        return <NaoEncontrada />;
     }
 
     return (

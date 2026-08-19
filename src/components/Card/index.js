@@ -71,6 +71,7 @@ function Card({id, titulo, url, capa, imdbID, imdbRating, genre, runtime}) {
             </Link>
 
             <button
+                type="button"
                 className={styles.botaoFavorito}
                 onClick={() => adicionarFavorito(id)}
             >
